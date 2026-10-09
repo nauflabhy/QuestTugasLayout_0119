@@ -11,4 +11,8 @@
     <string name="nama_2">Muhammad Naufal Abhyasa</string>
     <string name="telepon_2">08123456789</string>
     <string name="alamat_2">Kotabaru, Kalimantan Selatan</string>
+
+    <string name="nama_3">Agus Batu</string>
+    <string name="telepon_3">08987654321</string>
+    <string name="alamat_3">Bogor</string>
 </resources>
