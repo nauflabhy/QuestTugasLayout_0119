@@ -47,4 +47,10 @@ fun MahasiswaCard(
         colors = CardDefaults.cardColors(
             containerColor = backgroundColor
         )
-    )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        )
