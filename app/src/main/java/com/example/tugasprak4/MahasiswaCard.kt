@@ -23,10 +23,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.tugasprak4.ui.theme.TugasPrak4Theme
 
 @Composable
 fun MahasiswaCard(
@@ -51,7 +48,7 @@ fun MahasiswaCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(8.dp),
+                .padding(dimensionResource(R.dimen.card_inner_padding)),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
@@ -59,38 +56,38 @@ fun MahasiswaCard(
                 contentDescription = null,
                 modifier = Modifier
                     .size(dimensionResource(R.dimen.logo_size))
-                    .padding(2.dp)
+                    .padding(dimensionResource(R.dimen.logo_padding))
             )
-            Spacer(modifier = Modifier.width(16.dp))
+            Spacer(modifier = Modifier.width(dimensionResource(R.dimen.spacing_medium)))
             Column(
                 modifier = Modifier.weight(1f)
             ) {
                 Text(
                     text = nama,
-                    fontSize = 18.sp,
+                    fontSize = dimensionResource(R.dimen.font_size_title).value.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
+                    color = colorResource(R.color.white)
                 )
                 if (telepon != null) {
                     Text(
                         text = telepon,
-                        fontSize = 14.sp,
-                        color = Color.White
+                        fontSize = dimensionResource(R.dimen.font_size_subtitle).value.sp,
+                        color = colorResource(R.color.white)
                     )
                 }
                 Text(
                     text = alamat,
-                    fontSize = 14.sp,
-                    color = Color.Yellow
+                    fontSize = dimensionResource(R.dimen.font_size_subtitle).value.sp,
+                    color = colorResource(R.color.yellow)
                 )
             }
-            Spacer(modifier = Modifier.width(16.dp))
+            Spacer(modifier = Modifier.width(dimensionResource(R.dimen.spacing_medium)))
             Image(
                 painter = painterResource(R.drawable.logo_umy),
                 contentDescription = null,
                 modifier = Modifier
                     .size(dimensionResource(R.dimen.logo_size))
-                    .padding(2.dp)
+                    .padding(dimensionResource(R.dimen.logo_padding))
             )
         }
     }
@@ -100,20 +97,20 @@ fun MahasiswaCard(
 fun ActivitasPertama(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
-            .padding(top = 40.dp)
+            .padding(top = dimensionResource(R.dimen.padding_top_main))
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = stringResource(R.string.title),
-            fontSize = 28.sp,
+            fontSize = dimensionResource(R.dimen.font_size_main_title).value.sp,
             fontWeight = FontWeight.Bold
         )
         Text(
             text = stringResource(R.string.subtitle),
-            fontSize = 18.sp
+            fontSize = dimensionResource(R.dimen.font_size_title).value.sp
         )
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.spacing_large)))
 
         MahasiswaCard(
             nama = stringResource(R.string.nama_1),
@@ -142,7 +139,7 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.weight(1f))
         Text(
             text = stringResource(R.string.copyright),
-            modifier = Modifier.padding(bottom = 30.dp)
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_bottom_copyright))
         )
     }
 }
