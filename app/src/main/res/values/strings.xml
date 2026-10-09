@@ -7,4 +7,8 @@
 
     <string name="nama_1">Dadang Lentut</string>
     <string name="alamat_1">Bandung</string>
+
+    <string name="nama_2">Muhammad Naufal Abhyasa</string>
+    <string name="telepon_2">08123456789</string>
+    <string name="alamat_2">Kotabaru, Kalimantan Selatan</string>
 </resources>
