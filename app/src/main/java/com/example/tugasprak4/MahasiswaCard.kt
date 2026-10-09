@@ -84,3 +84,14 @@ fun MahasiswaCard(
                     color = Color.Yellow
                 )
             }
+            Spacer(modifier = Modifier.width(16.dp))
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(dimensionResource(R.dimen.logo_size))
+                    .padding(2.dp)
+            )
+        }
+    }
+}
