@@ -15,4 +15,8 @@
     <string name="nama_3">Agus Batu</string>
     <string name="telepon_3">08987654321</string>
     <string name="alamat_3">Bogor</string>
+
+    <string name="nama_4">Udin Kawat</string>
+    <string name="telepon_4">081122334455</string>
+    <string name="alamat_4">Surabaya</string>
 </resources>
