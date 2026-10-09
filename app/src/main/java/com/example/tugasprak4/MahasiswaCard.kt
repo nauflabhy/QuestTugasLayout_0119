@@ -27,3 +27,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tugasprak4.ui.theme.TugasPrak4Theme
+
+@Composable
+fun MahasiswaCard(
+    nama: String,
+    alamat: String,
+    telepon: String? = null,
+    backgroundColor: Color,
+    modifier: Modifier = Modifier
+)
