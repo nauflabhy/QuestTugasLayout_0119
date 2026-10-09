@@ -35,4 +35,16 @@ fun MahasiswaCard(
     telepon: String? = null,
     backgroundColor: Color,
     modifier: Modifier = Modifier
-)
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(
+                horizontal = dimensionResource(R.dimen.screen_padding),
+                vertical = dimensionResource(R.dimen.card_spacing)
+            ),
+        shape = RoundedCornerShape(dimensionResource(R.dimen.card_radius)),
+        colors = CardDefaults.cardColors(
+            containerColor = backgroundColor
+        )
+    )
