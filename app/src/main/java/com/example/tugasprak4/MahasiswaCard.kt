@@ -61,3 +61,26 @@ fun MahasiswaCard(
                     .size(dimensionResource(R.dimen.logo_size))
                     .padding(2.dp)
             )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = nama,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+                if (telepon != null) {
+                    Text(
+                        text = telepon,
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+                Text(
+                    text = alamat,
+                    fontSize = 14.sp,
+                    color = Color.Yellow
+                )
+            }
