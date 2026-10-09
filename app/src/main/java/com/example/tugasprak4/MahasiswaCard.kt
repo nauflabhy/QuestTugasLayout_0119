@@ -103,4 +103,46 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             .padding(top = 40.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        Text(
+            text = stringResource(R.string.title),
+            fontSize = 28.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = stringResource(R.string.subtitle),
+            fontSize = 18.sp
+        )
+        Spacer(modifier = Modifier.height(20.dp))
+
+        MahasiswaCard(
+            nama = stringResource(R.string.nama_1),
+            alamat = stringResource(R.string.alamat_1),
+            backgroundColor = colorResource(R.color.card_purple)
+        )
+        MahasiswaCard(
+            nama = stringResource(R.string.nama_2),
+            telepon = stringResource(R.string.telepon_2),
+            alamat = stringResource(R.string.alamat_2),
+            backgroundColor = colorResource(R.color.card_blue)
+        )
+        MahasiswaCard(
+            nama = stringResource(R.string.nama_3),
+            telepon = stringResource(R.string.telepon_3),
+            alamat = stringResource(R.string.alamat_3),
+            backgroundColor = colorResource(R.color.card_green)
+        )
+        MahasiswaCard(
+            nama = stringResource(R.string.nama_4),
+            telepon = stringResource(R.string.telepon_4),
+            alamat = stringResource(R.string.alamat_4),
+            backgroundColor = colorResource(R.color.card_gray)
+        )
+
+        Spacer(modifier = Modifier.weight(1f))
+        Text(
+            text = stringResource(R.string.copyright),
+            modifier = Modifier.padding(bottom = 30.dp)
+        )
+    }
+}
